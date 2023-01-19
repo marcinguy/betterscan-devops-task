@@ -1,0 +1,53 @@
+{
+    "manifestVersion": 1,
+    "id": "build-release-task",
+    "name": "Betterscan Scan Build and Release Tools",
+    "version": "0.0.4",
+    "publisher": "betterscan",
+    "public": true,
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services"
+        }
+    ],    
+    "description": "Tools for building/releasing with Betterscan scan. Includes one build/release task.",
+    "categories": [
+        "Azure Pipelines"
+    ],
+    "tags": [
+        "SAST",
+        "Code Scanning",
+        "Vulnerabilities",
+	"buildcicode",
+	"analysiscode",
+	"qualitycontinuous",
+	"integration",
+       	"SAST",
+       	"security"
+    ],
+    "icons": {
+        "default": "images/extension-icon.png"        
+    },
+    "content": {
+	    "details": {
+	         "path": "overview.md"
+             }
+    },
+    "files": [
+        {
+            "path": "buildandreleasetask"
+        }
+    ],
+    "contributions": [
+        {
+            "id": "custom-build-release-task",
+            "type": "ms.vss-distributed-task.task",
+            "targets": [
+                "ms.vss-distributed-task.tasks"
+            ],
+            "properties": {
+                "name": "buildandreleasetask"
+            }
+        }
+    ]
+}
