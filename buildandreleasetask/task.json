@@ -9,20 +9,10 @@
  "author": "Betterscan.io",
  "version": {
      "Major": 0,
-     "Minor": 1,
+     "Minor": 2,
      "Patch": 0
  },
- "instanceNameFormat": "Echo $(samplestring)",
- "inputs": [
-     {
-         "name": "samplestring",
-         "type": "string",
-         "label": "Sample String",
-         "defaultValue": "",
-         "required": true,
-         "helpMarkDown": "A sample string"
-     }
- ],
+ "instanceNameFormat": "Betterscan",
  "execution": {
      "Node": {
          "target": "index.js"
